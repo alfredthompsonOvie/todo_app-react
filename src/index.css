@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Raleway:wght@700&display=swap");
+
+:root {
+	box-sizing: border-box;
+
+	--ff-body: "Montserrat", sans-serif;
+	--ff-header: "Raleway", sans-serif;
+
+	--fw-reg: 400;
+	--fw-med: 500;
+	--fw-semiBold: 600;
+	--fw-bold: 700;
+	--placeholder: #828282;
+}
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+body {
+	margin: 0;
+	/* min-height: 100vh; */
+	font-family: var(--ff-body);
+}
+.container {
+	max-width: 600px;
+	margin: 3em auto;
+}
+header {
+	text-align: center;
+	font-family: Raleway;
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 42px;
+	letter-spacing: -0.045em;
+	color: #333;
+}
+.tabs__container {
+	border-bottom: 1px solid #bdbdbd;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+  margin: 3em 0 2em;
+}
+button {
+	font-family: inherit;
+	font-size: 14px;
+	font-weight: var(--fw-semiBold);
+  cursor: pointer;
+	padding: 1em 2em;
+	background-color: transparent;
+	text-transform: capitalize;
+
+  text-align: center;
+  border: 0;
+}
+.btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  height: 3em;
+  max-width: 7em;
+  width: 100%;
+}
+.btn__text {
+  margin: auto 0;
+}
+.line {
+	background-color: #2f80ed;
+	width: 0px;
+	height: 4px;
+	border-radius: 4px 4px 0px 0px;
+	margin-top: auto;
+	transition: all 0.3s linear;
+}
+.line.active {
+  width: 89px;
+}
+.form {
+	display: flex;
+	align-items: center;
+	gap: 1.5em;
+}
+.form__group {
+	width: 100%;
+}
+.form__control {
+	width: 100%;
+	padding: 1em;
+	border-radius: 12px;
+	border-color: #bdbdbd;
+	border-width: 1px;
+}
+.form__control::placeholder {
+	color: var(--placeholder);
+}
+.cta {
+	background-color: #2f80ed;
+	color: #fff;
+	border-radius: 12px;
+	font-size: 14px;
+	font-weight: var(--fw-semiBold);
+}
+.tasks__output {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1em;
+}
+.task__item {
+	display: flex;
+	align-items: center;
+
+	gap: 1em;
+}
+ul {
+	list-style: none;
+}
+li {
+	padding: 0.8em 0;
+
+	font-size: 18px;
+	font-weight: var(--fw-med);
+	line-height: 22px;
+	color: #000;
+}
+li + li {
+	margin-top: 0.1em;
+}
+li.complete p {
+  text-decoration: line-through;
+  color: #333333;
+
+}
+.delete {
+  margin-left: auto;
+  border: 0;
+}
+.deleteAll {
+  border-radius: 4px;
+  background: #EB5757;
+  color: #fff;
+  align-self: flex-end;
+
+  display: flex;
+  align-items: center;
+  gap: .5em;
+}
