@@ -68,6 +68,12 @@ button {
 }
 .btn__text {
   margin: auto 0;
+	color:  #bdbdbd;
+	color:  #828282;
+}
+.btn__text.active {
+	color:  #000;
+
 }
 .line {
 	background-color: #2f80ed;
